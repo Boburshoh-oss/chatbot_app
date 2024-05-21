@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain_community
+langchain_cohere
+cohere
+pypdf
+docx2txt
+fuzzywuzzy[speedup]
+langchain-anthropic
