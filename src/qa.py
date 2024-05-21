@@ -31,7 +31,7 @@ from langchain_core.prompts import (
 
 class QA:
     def __init__(self, api_key):
-        os.environ["COHERE_API_KEY"] = "nAcNQjlxT9dYt4pfP9MLYiRG0pNiBvCjT2yZZ0yH"
+        os.environ["COHERE_API_KEY"] = os.getenv("COHERE_API_KEY")
         os.environ["ANTHROPIC_API_KEY"] = api_key
         self.cache = ".langchain.db"
         self._initialize_cache()

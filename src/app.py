@@ -3,7 +3,7 @@ import streamlit as st
 from qa import QA
 
 # Set up the Cohere API key
-os.environ["ANTHROPIC_API_KEY"] = "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"
+os.environ["ANTHROPIC_API_KEY"] = os.getenv("ANTHROPIC_API_KEY")
 
 # Initialize session state for chat history and QA object if they don't exist
 if "chat_history" not in st.session_state:
